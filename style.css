@@ -1,0 +1,131 @@
+body {
+    font-family: "inter";
+    background-color: #e4a7cc;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #header{
+    background-color: #D9BBF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2vh;
+    gap: 20px;
+  }
+  .dark-mode{
+    color: #f8d8ec;
+    background-color: #450c4b;
+  }
+  #darkmode{
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+}
+.ckbdmStyle{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.ckbdmStyle::before{
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    content: "\f185";
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: #6d00cf;
+    background-color: var(--cinza);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ckbDark:checked+.ckbdmStyle::before{
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    content: "\f186";
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    color: #6d00cf;
+    background-color: var(--branco);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(360deg);
+}
+#ckbDark{
+    position: absolute;
+    opacity: 0;
+    height: 3em;
+    width: 3em;
+    z-index: 1000;
+    cursor: pointer;
+}
+  .container {
+    max-width: 1300px;
+    background-color: #f8d8ec;
+    color: #333;
+    margin-bottom: 1750px;
+  }
+  h1 {
+    font-size: 24px;
+    color: #6d00cf;
+    max-width: 20%;
+  }
+  .section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8d8ec;
+  }
+  .section1{
+    background-color: #D9BBF0;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .section1 img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+  }
+  .section h2, .section1 h2 {
+    font-size: 24px;
+    color: #6d00cf;
+    margin-bottom: 10px;
+  }
+   img {
+    width: 100px; 
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  }
+  .info {
+    flex: 1;
+    min-width: 300px;
+  }
+  .github-link {
+    font-weight: bold;
+    color: #6d00cf;
+    text-decoration: none;
+  }
